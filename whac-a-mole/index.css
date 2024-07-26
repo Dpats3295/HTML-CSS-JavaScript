@@ -9,10 +9,7 @@ body {
 
 header {
     width: 840px;
-    border: 1px solid red;
-    background-color: lightblue;
     text-align: center;
-    padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -20,20 +17,22 @@ header {
 .timer-container {
     position: fixed;
     top: 10px;
-    right: 10px;
-    border-radius: 5px;
+    right: 200px;
     display: block;
     text-align: center;
 }
 
+p {
+    font-size: large;
+    font-weight: bold;
+}
+
 .game-container{
     width: 840px;
-    border: 1px solid red;
 }
 
 .game-board-container{
     width: 800px;
-    border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(4, 200px);
     margin: 20px;
