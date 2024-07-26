@@ -2,64 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Whac-a-Mole</title>
         <link rel="stylesheet" href="./index.css" />
     </head>
     <body>
-
         <header class="header-container">
             <h1>Welcome to whac-a-mole</h1>
-            <p>Let's Go. Your total score is 0</p>
-            <button>start</button>
+            <p>Let's Go. Your total score is <span id="score">0</span></p>
+            <button id="start-button">start</button>
         </header>
 
 
         <div class="timer-container">
-            <h1>Time left</h1>
-            <p>30</p>
+            <p>Time left</p>
+            <p id="timer">30</p>
         </div>
 
         <div class="game-container">
-            <div class="game-board-container">
-                <button id="1" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="2" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="3" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="4" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="5" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="6" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="7" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="8" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="9" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="10" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="11" class="game-block">
-                    <img src="" />
-                </button>
-                <button id="12" class="game-block">
-                    <img src="" />
-                </button>
+            <div class="game-board-container js-game-board-container" id="game-board-container">
+                <button id="1" class="game-block"></button>
+                <button id="2" class="game-block"></button>
+                <button id="3" class="game-block"></button>
+                <button id="4" class="game-block"></button>
+                <button id="5" class="game-block"></button>
+                <button id="6" class="game-block"></button>
+                <button id="7" class="game-block"></button>
+                <button id="8" class="game-block"></button>
+                <button id="9" class="game-block"></button>
+                <button id="10" class="game-block"></button>
+                <button id="11" class="game-block"></button>
+                <button id="12" class="game-block"></button>
             </div>
         </div>
+
+        <script type="module" src="./MVC/controller.js"></script>
     </body>
 </html>
